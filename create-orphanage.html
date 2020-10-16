@@ -113,11 +113,11 @@
 
           <div class="input-block">
             <label for="open_on_weekends">Atende fim de semana?</label>
-            <input type="hidden" id="opening_hours" name="opening_hours" value="1" required/>
+            <input type="hidden" id="open_on_weekends" name="open_on_weekends" value="1" required/>
           
             <div class="button-select">
-              <button type="button" class="active">Sim</button>
-              <button type="button">Não</button>
+              <button data-value="1" onclick="toggerSelect(event)" type="button" class="active">Sim</button>
+              <button data-value="0" onclick="toggerSelect(event)" type="button">Não</button>
             </div>
 
             <button type="submit" class="primary-button">
